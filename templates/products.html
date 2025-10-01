@@ -1,0 +1,15 @@
+<!-- templates/products.html -->
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Our Products</h1>
+<p>We proudly offer the following items:</p>
+<ul>
+  {% for item in products %}
+    <li>{{ item }}</li>
+  {% endfor %}
+</ul>
+
+{% endblock %}
+
